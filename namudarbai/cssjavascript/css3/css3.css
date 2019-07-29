@@ -1,0 +1,24 @@
+.header{
+  color:blue;
+}
+i{
+  font-style:italic;
+}
+#thirst{
+  text-align: right;
+}
+#ftest{
+  font: 50px/70px Georgia, Times, serif;
+}
+#stest{
+  font-family: 30px/40px "Gill Sans" Arial sans-serif;
+}
+#ttest{
+  font-style: 12px/70px Arial Verdana sans-serif;
+}
+span{
+	font: italic bold 12px/30px;
+}
+div{
+	margin-right: 390px;
+}
