@@ -1,5 +1,5 @@
 .header{
-  color:blue;
+  color:#008bc4;
 }
 i{
   font-style:italic;
@@ -17,8 +17,11 @@ i{
   font-style: 12px/70px Arial Verdana sans-serif;
 }
 span{
-	font: italic bold 12px/30px;
+  font: italic bold 12px/30px;
 }
 div{
-	margin-right: 390px;
+  margin-right: 390px;
+}
+a{
+  text-decoration: none;
 }
