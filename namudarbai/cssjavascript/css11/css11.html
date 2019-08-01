@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News.html</title>
+
+<style>
+  #header{
+    height: 140px;
+	background-color: black;
+	font-size: 20px;
+    text-align: center;
+	color: white;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    margin-top:0px;
+    }
+  a {
+    text-decoration: none;
+    background:black;
+    color:#fff;
+    padding:10px;
+    font-family: arial;
+    }
+  a:hover {
+    background:#1C85BB;
+    }
+  li {
+    float:left;
+    margin-right:5px;
+    }
+  #footer{
+	height: 160px;
+	background-color: black;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	}
+  #ftr{
+	text-decoration: none;
+    background-color: black;
+    color:#fff;
+    padding:10px;
+    font-family: arial;
+	}
+  img{
+	width: 150px;
+    height: 80px;
+	}
+  img.fig {
+	text-align: right;
+    float: left; /* image floating from left */
+    padding-left: 0px; /* Отступ слева */
+	padding-right: 5px; /* Отступ справа */
+	padding-top: 0px; /* Отступ сверху */
+    padding-bottom: 0px; /* Отступ снизу */
+	}
+  #ctime{
+    text-align: center;
+	}
+	#atitle{
+		height: 50px;
+		width: 150;
+	}
+   body{
+	margin: 0;
+   }
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.row-centered{
+	justify-content: center;
+/*	align-items: center;*/
+}
+
+
+.row-vertical{
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+.row-left{
+	justify-content: flex-start;
+/*	align-items: center;*/
+}
+
+.header-text{
+	margin: 100px;
+}
+
+.footer-text, .footer-map{
+	margin: 20px;
+
+}
+
+/* iki 600 px imtinai*/
+@media screen AND (max-width:600px){
+/*	renkates jus ar naudoti ar ne*/
+	.container{
+		width: 90%;
+		margin: auto;
+	}
+	.cols1{ width: 8.33%; }
+	.cols2{ width: 16.66%; }
+	.cols3{ width: 25%; }
+	.cols4{ width: 33.33%; }
+	.cols5{ width: 41.66%; }
+	.cols6{ width: 50%; }
+	.cols7{ width: 58.33%; }
+	.cols8{ width: 66.66%; }
+	.cols9{ width: 75%; }
+	.cols10{ width: 83.33%; }
+	.cols11{ width: 91.66%; }
+	.cols12{ width: 100%; }
+}
+
+/* nuo 600 px is daugiau*/
+@media screen AND (min-width:601px){
+	.container{
+		width: 85%;
+		margin: auto;
+	}
+	.colm1{ width: 8.33%; }
+	.colm2{ width: 16.66%; }
+	.colm3{ width: 25%; }
+	.colm4{ width: 33.33%; }
+	.colm5{ width: 41.66%; }
+	.colm6{ width: 50%; }
+	.colm7{ width: 58.33%; }
+	.colm8{ width: 66.66%; }
+	.colm9{ width: 75%; }
+	.colm10{ width: 83.33%; }
+	.colm11{ width: 91.66%; }
+	.colm12{ width: 100%; }
+}
+
+/* nuo 993 px ir daugiau*/
+@media screen AND (min-width:993px){
+	.container{
+		width: 70%;
+		margin: auto;
+	}
+	.coll1{ width: 8.33%; }
+	.coll2{ width: 16.66%; }
+	.coll3{ width: 25%; }
+	.coll4{ width: 33.33%; }
+	.coll5{ width: 41.66%; }
+	.coll6{ width: 50%; }
+	.coll7{ width: 58.33%; }
+	.coll8{ width: 66.66%; }
+	.coll9{ width: 75%; }
+	.coll10{ width: 83.33%; }
+	.coll11{ width: 91.66%; }
+	.coll12{ width: 100%; }
+}
+
+article{
+	margin: 10px;
+/*	border: 1px solid black;*/
+	padding: 10px;
+	text-align: justify;
+}
+
+article img, .image img{
+	width: 100%;
+}
+
+.image{
+	margin: 5px;
+}
+
+nav{
+	position: sticky;
+	top:0;
+}
+
+footer, nav{
+	background-color: black;
+	color: white;
+}
+
+footer{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	margin: 10px;
+	padding: 20px;
+}
+nav ul li a:hover{
+	color: black;
+	background-color: white;
+
+}
+.empty{height: 50px;}
+
+</style>
+</head>
+
+<body>
+
+<div id="header">
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">New</a></li>
+    <li><a href="#">Contacts</a></li>
+    <li><a href="#">About</a></li>
+    </ul>
+	<br>
+	INFO THE DARKNESS
+</div>
+
+<div class="container">
+  <div class="row">
+	<div class="coll4 colm6 cols12">
+		<div id="atitle"><h3> When is the best time to see the Northern Lights in Iceland?</h3></div>
+		<div id="ctime"><time id="tme">2019-08-01</time></div>
+		<figure>
+		  <img src="photo1.jpg" alt="Illustration" class="fig">
+		</figure>
+	    <article>The Northern lights can be elusive and there are a few factors you need to keep in mind when trying to witness this great natural phenomenon. Weather, season and location all matter and by taking them into account you can greatly increase you chance to see the Auroras.We often get the question: When is the best time to see the Northern Lights? There’s both a simple and complicated answer to that question. The simple answer is: From September to mid-April, or when the nights are dark and cold. After equinox in September, the nights in Iceland are fully dark and that alone increases the chances of seeing the Northern Lights. You might find some sources stating that the best time is November – February, but if you decide to visit Iceland during these months please consider that the weather can be unforgiving, lots of rain and snow, which can seriously reduce your chances to see the Northern Lights.
+		</article>
+	</div>
+	  <div class="coll4 colm6 cols12">
+		  <div id="atitle"><h3>Here is the longer and more complicated answer.</h3></div>
+		  <div id="ctime"><time id="tme">2019-08-01</time></div>
+	      <figure>
+			<img src="photo2.jpg" alt="Illustration" class="fig">
+	      </figure>
+   		  <article>
+		    Iceland is one of the best places in the world to see the Northern Lights, due to some very important factors. First, Iceland is close to the Arctic circle and though we enjoy long and bright summer nights, in winter the nights are dark (but not full of terrors) and long. Guaranteed darkness is the single most important factor in seeing the Northern Lights, in daylight the Auroras are invisible.Weather is also a huge factor and the second most important one. To see the Northern Lights the skies need to be clear, preferably very clear and empty of clouds. Iceland is an island in the middle of the North-Atlantic. Weather changes are frequent here, even more so in winter. You want to have, as mentioned before, clear skies and if rain or snow is in the forecast, the chances for seeing the Northern Lights are greatly reduced.
+		  </article>
+	  </div>
+
+	  <div class="coll4 colm6 cols12">
+		  <div id="atitle"><h3>Location is everything!</h3></div>
+		<div id="ctime"><time id="tme">2019-08-01</time></div>
+		  <figure>
+            <img src="photo3.jpg"  alt="Illustration" class="fig">
+          </figure>
+		  <article>
+			Finally, just as in the real estate business, location is critical. The chances you’ll see the Northern Lights in Reykjavik, even on clear, cold nights, are minimal, simply due to light pollution. Cities light Reykjavik are lit up in the night and this diminishes your chance to see the Auroras, so you need to leave the city and head out to the countryside, where there are few, if any, lights. Of course, there come times when the Northern Lights are so strong that they are visible in the city, but we do not recommend that you rely on that to happen. There are many great places in Iceland to see the Northern Lights and you don’t need to travel far from Reykjavik to find perfect locations for seeing the Northern Lights.
+		  </article>
+	  </div>
+
+	  <div class="coll4 colm6 cols12">
+	  <div id="atitle"><h3>When are the Northern Lights visible in Iceland?</h3></div>
+	  <div id="ctime"><time id="tme">2019-08-01</time></div>
+        <figure>
+          <img src="photo4.jpg" alt="Illustration" class="fig">
+        </figure>
+        <article>
+		  Please remember, that the Northern Lights are a natural phenomenon and there’s never any guarantee that they will lit up the sky the moment we decide to look up. Hunting for the Auroras requires patience and warm clothes. If you make sure that you’re dressed in warm clothes and you are willing to wait for the Auroras, your patience can be richly rewarded. Happy hunting!
+		</article>
+	  </div>
+
+	  <div class="coll4 colm6 cols12">
+		  <div id="atitle"><h3>What are the Northern Lights?</h3></div>
+	  <div id="ctime"><time id="tme">2019-08-01</time></div>
+        <figure>
+		  <img src="photo5.jpg" alt="Illustration" class="fig">
+        </figure>
+		<article>
+		  There are many legends about the lights. In medieval times seers and fortune tellers believed that the lights were harbingers of woe, war and famine. The Menominee Indians of Wisconsin believed the lights indicated where the spirits of great hunters and fishermen, called manabai’wok, could be found. Many different cultures believed that the lights were spirits, either of their people or the animals that they hunted.After diving into the subject it’s clear that  “Solar winds hitting the earths magnetic shield creating color” is just not going to cut it! The Northern Lights are a series of discharged particles emanating from the sun. These tiny charged beauties gush out of enormous dark spots on the sun’s surface creating clouds which travel over 150 million kilometers before reaching Earth.To enter the Earth’s ionosphere the particles need to become tangled in the magnetic field and be dragged down to the poles. When the lights are dragged into the poles they collide with gasses. This collision is what creates the Auroras. The colour of the lights depends on what types of gasses the discharged particles collide with. For instance a collisions with oxygen typically produce green and yellow lights while contact with nitrogen results in reds, violets, and blues. The shape of the lights depends on the magnitude of the solar flares. During periods of minimal solar flares, shapes tend to be less dramatic. But in cycles of strong flares, lights dance, wind, loop and weave through the night sky.
+		</article>
+	</div>
+
+	<div class="coll4 colm6 cols12">
+	<div id="atitle"><h3>Where to see Northern Lights in Iceland?</h3></div>
+	<div id="ctime"><time id="tme">2019-08-01</time></div>
+      <figure>
+		  <img src="photo6.jpg" alt="Illustration" class="fig">
+      </figure>
+	  <article>
+		Iceland is the perfect place to see Northern Lights, but where to go to spot them? The answer is pretty easy: the whole Iceland is perfect to see Northern Lights. As a matter of fact, when the phenomenon is particularly intense, you might be able to see it even around Reykjavik, despite the light pollution.That said, if you are planning your trip to Iceland and want to make sure you don’t miss the chance to see Northern Lights, you better consider to visit locations away from light pollution and facing North, since The Northern Lights usually start showing up in the North.The spectacular Skógafoss Waterfall, the Jökulsárlón glacier lagoon or the Stokksnes beach are some of the most evocative places to admire the Northern Lights surrounded by the perfect northern natural landscape.
+	  </article>
+	</div>
+  </div>
+</div>
+
+
+<div id="footer">
+	<br>
+	<br>
+  <p><a href="ZIGMANTASVCS@GMAIL.COM" id="ftr" >ZIGMANTASVCS@GMAIL.COM</a></p>
+</div>
+
+</body>
+</html>
