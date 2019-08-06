@@ -1,8 +1,10 @@
 //alert ("all well!"); //message for checking JS
 
-function yourNameSname(){
-let x=prompt("Input Your first name, please ");
-let y=prompt("Input Your second name, please ")
-  alert(x+" "+y+" "+"has just connected.");
+var text="";
+var mname="Zana";
+var i;
+let k=prompt("Input one whole and positive number and search for result on consol, please");
+for (i=0; i<k; i++){
+  text+=mname+" ";
 }
-let x,y=yourNameSname();
+console.log(text);
