@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title></title>
+<style>
+body{
+  background-color: #26292e;
+  color: #fd7527;	
+}
+h2{
+  background-color: #fd7527;
+  color: black;		
+}
+
+#submit{
+  background-color: #fd7527;
+  color: black;
+}
+</style>
+</head>
+
+<body>
+  <h2>Contactez-nous pour concrétisez votre projet immobilier:</h2>
+  <form action="/action_page.php"> <!--Begin of clients form-->
+  Vous souhatez :<br>
+  <input type="radio" name="geography" value="Buy" checked> Acheter<br>
+  <input type="radio" name="geography" value="Rent"> Louer<br>
+  <input type="radio" name="geography" value="Sell" > Vendre<br>
+  Votre demande concerne:<br>
+  <select name="real_estate_kind []" multiple>
+    <option value="commercial"> Locaux commerciaux</option>
+	<option value="professional"> Locaux professionnels</option>
+	<option value="industrial"> Locaux industriels </option>
+	<option value="housing"> Locaux habitations </option>
+	<option value="land"> Terrains </option>
+	<option value="investments"> Investissments</option>
+	<option value="other"> Autre </option>
+  </select><br>
+ Votre Nom:<br>
+ <input type="text" name="first_name"><br>
+ Votre Prénom:<br>
+ <input type="text" name="second_name"><br>
+ Téléphone:<br>
+ <input type="text" name="phone_number"><br>
+ E-mail:<br>
+ <input type="email" name="email_name"><br>
+ Message:<br>
+ <input type="text" name="message"><br>
+ <br>
+ <br>
+ <input type="submit" value="Envoyer AVM2 ">
+ <form action="/action_page.php" method="post">
+											
+</form><!--End of clients form-->
+
+				
+</body>
+</html>
